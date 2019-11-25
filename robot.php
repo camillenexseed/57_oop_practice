@@ -3,6 +3,10 @@
 // Robotクラスをインスタンス化
 $robot = new Robot();
 
+// 初期値を出力
+echo '初期値の名前：'.$robot->getName().'<br>';
+echo '初期値の食べ物：'.$robot->getFood().'<br>';
+
 $robot->setName('ドラえもん');
 $robot->setFood('どら焼き');
 
