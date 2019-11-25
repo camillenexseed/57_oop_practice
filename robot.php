@@ -3,6 +3,18 @@
 // Robotクラスをインスタンス化
 $robot = new Robot();
 
+$robot->setName('ドラえもん');
+$robot->setFood('どら焼き');
+
+$robot->greeting();
+
+$robot2 = new Robot();
+
+$robot2->setName('ドラミ');
+$robot2->setFood('メロンパン');
+
+$robot2->greeting();
+
 class Robot
 {
     // プロパティ追加
@@ -10,6 +22,18 @@ class Robot
     public $food;
 
     // メソッドの追加
+    // nameプロパティに値を設定するメソッド
+    public function setName($namae)
+    {
+        $this->name = $namae;
+    }
+
+    // foodプロパティに値を設定するメソッド
+    public function setFood($tabemono)
+    {
+        $this->food = $tabemono;
+    }
+
     // talkメソッド追加
     public function talk()
     {
