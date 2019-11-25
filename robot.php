@@ -26,10 +26,22 @@ class Robot
         $this->name = $namae;
     }
 
+    // nameプロパティのゲッターメソッド追加
+    public function getName()
+    {
+        return $this->name;
+    }
+
     // foodプロパティに値を設定するメソッド
     public function setFood($tabemono)
     {
         $this->food = $tabemono;
+    }
+
+    // foodプロパティのゲッターメソッド追加
+    public function getFood()
+    {
+        return $this->food;
     }
 
     // talkメソッド追加
