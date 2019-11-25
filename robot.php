@@ -9,17 +9,15 @@ $robot->setFood('どら焼き');
 $robot->greeting();
 
 $robot2 = new Robot();
-
 $robot2->setName('ドラミ');
 $robot2->setFood('メロンパン');
-
 $robot2->greeting();
 
 class Robot
 {
     // プロパティ追加
-    public $name;
-    public $food;
+    private $name;
+    private $food;
 
     // メソッドの追加
     // nameプロパティに値を設定するメソッド
@@ -35,13 +33,13 @@ class Robot
     }
 
     // talkメソッド追加
-    public function talk()
+    private function talk()
     {
         echo 'こんにちは、ボクの名前は'.$this->name.'です<br>';
     }
 
     // eatメソッド追加
-    public function eat()
+    private function eat()
     {
         echo '好きな食べ物は'.$this->food.'です<br>';
     }
