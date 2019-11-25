@@ -20,6 +20,13 @@ class Robot
     private $food;
 
     // メソッドの追加
+    // コンストラクタで初期値を設定
+    public function __construct()
+    {
+        $this->name = 'ドラえもん';
+        $this->food = 'どら焼き';
+    }
+
     // nameプロパティに値を設定するメソッド
     public function setName($namae)
     {
