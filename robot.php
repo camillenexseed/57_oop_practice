@@ -7,15 +7,15 @@ $robot = new Robot();
 echo '初期値の名前：'.$robot->getName().'<br>';
 echo '初期値の食べ物：'.$robot->getFood().'<br>';
 
-$robot->setName('ドラえもん');
-$robot->setFood('どら焼き');
+$robot->setName('ドラミ');
+$robot->setFood('メロンパン');
 
 $robot->greeting();
 
-$robot2 = new Robot();
-$robot2->setName('ドラミ');
-$robot2->setFood('メロンパン');
-$robot2->greeting();
+// $robot2 = new Robot();
+// $robot2->setName('ドラミ');
+// $robot2->setFood('メロンパン');
+// $robot2->greeting();
 
 class Robot
 {
